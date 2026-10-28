@@ -21,5 +21,18 @@ func main() {
     }
 
     runLab5("hi")
+
+    fmt.Printf("\n=== Lab 6 ===\n")
+
+
+    message := "Secret cookie!"
+    lab6Encrypted := xorEncrypt(message, 101)
+
+    fmt.Printf("\nOriginal: %s", message)
+    fmt.Printf("\nXOR encryption: %X", lab6Encrypted)
+
+    lab6Decrypted := xorEncrypt(lab6Encrypted, 101)
+
+    fmt.Printf("\nXOR decrypted: %s", lab6Decrypted)
 }
 
